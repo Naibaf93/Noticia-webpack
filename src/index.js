@@ -1,3 +1,5 @@
+import { cargarCancion } from "./modulos/cancion.js";
+
 const key_api_tiempo = "c27d6882d7ee4c9b93d1623e685790a7";
 
 function getTiempo() {    
@@ -74,12 +76,9 @@ function cargarNoticia(nota) {
     document.getElementById('noticiaAutor').innerHTML = nota.autor;
 }
 
-function cargarCancion() {
-    const audio = document.getElementById('cancionDia');
-    audio.src = "../assets/Moby - We Are All Made Of Stars.mp3";
-}
+
 
 getTiempo();
 getHoras();
 getNoticia();
-cargarCancion();
+cargarCancion("../assets/Moby - We Are All Made Of Stars.mp3");
