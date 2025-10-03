@@ -1,6 +1,6 @@
 function getHoras() {
     const now = new Date();
-    horas = [];
+    const horas = [];
     
     // Ciudad de Nueva York, EE. UU.
     const newYorkTime = now.toLocaleString('en-US', { timeZone: 'America/New_York', hour12: false });
